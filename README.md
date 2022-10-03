@@ -3,6 +3,11 @@
 Lưu ý: Ở bài viết này chúng ta sẽ không bàn về CDN là gì, cách dùng như thế nào. 
 Bài viết phù hợp với các sản phẩm có tải lớn, nhiều cấu hình origin đang chạy trên AWS, cân nhắc nhiều nhà cung cấp local CDN vì vấn đề chi phí và độ trễ.
 
+
+Luồng CDN mà mọi người thường thấy:
+
+![alt text](https://github.com/mrphuongbn/decouple-cdn/blob/main/normal-cdn-aws.png?raw=true)
+
 # Thực trạng
 - Về góc độ production, chỉ sử dụng một nhà cung cấp cho một dịch vụ chính là một SPF – single point of failure. 
 - Mặc dù các nhà cung cấp CDN luôn cam kết được hỗ trợ chống tấn công DDoS ở tầng này, nhưng vẫn tiềm ẩn rủi ro bị tấn công/lỗi hệ thống bị lỗi kết nối một phần hoặc toàn bộ.
@@ -29,11 +34,6 @@ Bài viết phù hợp với các sản phẩm có tải lớn, nhiều cấu h�
 - Chi phí cạnh tranh (Đa phần ở Việt Nam thì đều giá tốt, chênh nhau không nhiều nên chi phí là yếu tố tính cuối cùng)
 
 # Giải pháp
-
-Luồng CDN mà mọi người thường thấy:
-
-![alt text](https://github.com/mrphuongbn/decouple-cdn/blob/main/normal-cdn-aws.png?raw=true)
-
 
 Giải pháp tách
 ![alt text](https://github.com/mrphuongbn/decouple-cdn/blob/main/decouple-cdn-solution.png?raw=true)
