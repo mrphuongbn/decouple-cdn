@@ -32,7 +32,7 @@ Bài viết phù hợp với các sản phẩm có tải lớn, nhiều cấu h�
 
 Luồng CDN mà mọi người thường thấy:
 
-![alt text](https://github.com/mrphuongbn/decouple-cdn/blob/main/normal-cdn.png?raw=true)
+![alt text](https://github.com/mrphuongbn/decouple-cdn/blob/main/normal-cdn-aws.png?raw=true)
 
 
 Giải pháp tách
