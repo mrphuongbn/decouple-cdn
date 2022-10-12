@@ -39,10 +39,10 @@ Giải pháp tách
 ![alt text](https://github.com/mrphuongbn/decouple-cdn/blob/main/cdn-solution.png?raw=true)
 Sau khi tách, chúng ta dùng endpoint của cloudfront làm source cho mọi nhà cung cấp CDN sẽ mang lại lợi ích:
 - Đổi nhà cung cấp một cách đơn giản chỉ bằng một endpoint.
+- Latency từ PoP của AWS tới S3 thì đương nhiên nhà siêu thấp (Chạy Backbone của AWS) mà nó lại ở ngay HN và HCM. Sau đó từ PoP tới các PoP của local CDN lại càng chả phải nghĩ.
 - Giảm rất nhiều chi phí CDN và data transfer out của S3. (Đương nhiên là vẫn còn ít chi phí từ Cloudfront tới local CDN provider)
-- Latency giảm.
 - Được support xử lý tấn công tốt hơn từ local CDN provider.
-- Trường hợp xấu nhất là tất cả các local CDN provider kém thì chỉ cần CNAME trực tiếp domain về cloudfront.
+- Trường hợp xấu nhất là tất cả các local CDN provider kém thì chỉ cần CNAME trực tiếp domain về cloudfront mà không phải điều chỉnh quá nhiều.
 
 ---------
 Trên đây là góc nhìn cá nhân mình, mong nhận được đóng góp để cải thiện hơn.
