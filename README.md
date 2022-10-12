@@ -1,4 +1,4 @@
-# Phân tách CDN - Giảm chi phí data transfer - Giảm độ trễ cho production
+# Giải pháp phân tách CDN - Giảm chi phí data transfer và độ trễ cho production
 
 Lưu ý: Ở bài viết này chúng ta sẽ không bàn về CDN là gì, cách dùng như thế nào. 
 Bài viết phù hợp với các sản phẩm có tải lớn, nhiều cấu hình origin đang chạy trên AWS, cân nhắc nhiều nhà cung cấp local CDN vì vấn đề chi phí và độ trễ.
@@ -8,7 +8,7 @@ Bài viết phù hợp với các sản phẩm có tải lớn, nhiều cấu h�
 Với edge location này dự kiến sẽ cải thiện độ trễ byte đầu tiên tới 30% đối với dữ liệu truyền qua, cung cấp kết nối an toàn, đáng tin cậy, hiệu suất cao tới end-user tại Việt Nam.
 Thực tế nó ngon thật, latency đang nhỏ hơn cả các local CDN hiện tại. (Đã được kiểm chứng bởi kỹ sư của Sapo.vn, Hoang-phuc.com và các đơn vị khác).
 
-# Luồng CDN mà mọi người thường thấy:
+# Luồng CDN bình thường:
 
 ![alt text](https://github.com/mrphuongbn/decouple-cdn/blob/main/normal-cdn-aws.png?raw=true)
 
