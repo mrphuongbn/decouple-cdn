@@ -30,16 +30,7 @@ Thực tế nó ngon thật, latency đang nhỏ hơn cả các local CDN hiện
 
 4. Chi phí xoá cache, chi phí phòng chống tấn công với AWS ghi rất cụ thể, nhưng local brand lại thường free.
 
-# Tiêu chí chọn một CDN Provider
-- Hạ tầng đủ lớn, sức chịu tải cao, phân tán gần end-user của sản phẩm không?
-- Có những hỗ trợ về chống tấn công DDoS không?
-- SLA cho service là bao nhiêu?
-- Lúc lỗi thì có kênh hỗ trợ 24/7 có Hotline, chat nào?
-- Chi phí cạnh tranh (Đa phần ở Việt Nam thì đều giá tốt, chênh nhau không nhiều nên chi phí là yếu tố tính cuối cùng)
-
 # Giải pháp
-
-Giải pháp tách
 ![alt text](https://github.com/mrphuongbn/decouple-cdn/blob/main/cdn-solution.png?raw=true)
 Sau khi tách, chúng ta dùng endpoint của cloudfront làm source cho mọi nhà cung cấp CDN sẽ mang lại lợi ích:
 - Đổi nhà cung cấp một cách đơn giản chỉ bằng một endpoint.
@@ -47,6 +38,14 @@ Sau khi tách, chúng ta dùng endpoint của cloudfront làm source cho mọi n
 - Giảm rất nhiều chi phí CDN và data transfer out của S3. (Đương nhiên là vẫn còn ít chi phí từ Cloudfront tới local CDN provider)
 - Được support xử lý tấn công tốt hơn từ local CDN provider.
 - Trường hợp xấu nhất là tất cả các local CDN provider kém thì chỉ cần CNAME trực tiếp domain về cloudfront mà không phải điều chỉnh quá nhiều.
+
+----
+# Gợi ý tiêu chí chọn một CDN Provider
+- Hạ tầng đủ lớn, sức chịu tải cao, phân tán gần end-user của sản phẩm không?
+- Có những hỗ trợ về chống tấn công DDoS không?
+- SLA cho service là bao nhiêu?
+- Lúc lỗi thì có kênh hỗ trợ 24/7 có Hotline, chat nào?
+- Chi phí cạnh tranh (Đa phần ở Việt Nam thì đều giá tốt, chênh nhau không nhiều nên chi phí là yếu tố tính cuối cùng)
 
 ---------
 Trên đây là góc nhìn cá nhân mình, mong nhận được đóng góp để cải thiện hơn.
