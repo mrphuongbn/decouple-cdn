@@ -36,7 +36,7 @@ Luồng CDN mà mọi người thường thấy:
 # Giải pháp
 
 Giải pháp tách
-![alt text](https://github.com/mrphuongbn/decouple-cdn/blob/main/decouple-cdn-solution.png?raw=true)
+![alt text](https://github.com/mrphuongbn/decouple-cdn/blob/main/cdn-solution.png?raw=true)
 Sau khi tách, chúng ta dùng endpoint của cloudfront làm source cho mọi nhà cung cấp CDN sẽ mang lại lợi ích:
 - Đổi nhà cung cấp một cách đơn giản chỉ bằng một endpoint.
 - Giảm rất nhiều chi phí CDN và data transfer out của S3. (Đương nhiên là vẫn còn ít chi phí từ Cloudfront tới local CDN provider)
