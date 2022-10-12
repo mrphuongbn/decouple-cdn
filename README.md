@@ -10,7 +10,7 @@ Thực tế nó ngon thật, latency đang nhỏ hơn cả các local CDN hiện
 
 # Luồng CDN bình thường:
 
-![alt text](https://github.com/mrphuongbn/decouple-cdn/blob/main/normal-cdn-aws.png?raw=true)
+![alt text](https://github.com/mrphuongbn/decouple-cdn/blob/main/normal-cdn-to-aws.png?raw=true)
 
 # Thực trạng
 - Về góc độ production, chỉ sử dụng một nhà cung cấp cho một dịch vụ chính là một SPF – single point of failure. 
