@@ -3,8 +3,12 @@
 Lưu ý: Ở bài viết này chúng ta sẽ không bàn về CDN là gì, cách dùng như thế nào. 
 Bài viết phù hợp với các sản phẩm có tải lớn, nhiều cấu hình origin đang chạy trên AWS, cân nhắc nhiều nhà cung cấp local CDN vì vấn đề chi phí và độ trễ.
 
+# AWS edge locations có mặt tại Việt Nam
+Đầu tiên, giải pháp này cũng bắt nguồn từ thông tin cực hữu ích là cuối tháng 8/2022, AWS đã ra mắt 02 AWS edge locations mới tại Hà Nội và Hồ Chí Minh.
+Với edge location này dự kiến sẽ cải thiện độ trễ byte đầu tiên tới 30% đối với dữ liệu truyền qua, cung cấp kết nối an toàn, đáng tin cậy, hiệu suất cao tới end-user tại Việt Nam.
+Thực tế nó ngon thật, latency đang nhỏ hơn cả các local CDN hiện tại. (Đã được kiểm chứng bởi kỹ sư của Sapo.vn, Hoang-phuc.com và các đơn vị khác).
 
-Luồng CDN mà mọi người thường thấy:
+# Luồng CDN mà mọi người thường thấy:
 
 ![alt text](https://github.com/mrphuongbn/decouple-cdn/blob/main/normal-cdn-aws.png?raw=true)
 
